@@ -1,0 +1,235 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+
+}
+
+header {
+    margin-bottom: 2em;
+    margin-top: 3em;
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .nav-link {
+        &:hover {
+            color: variables.$colorRed;
+        }
+    }
+}
+
+
+#section-main {
+    margin-bottom: 3em;
+
+    &-1 {
+
+        picture {
+            img {
+                width: 100%;
+            }
+        }
+
+        &-texts {
+            margin-top: 2em;
+
+            &-title {
+                margin-right: 1em;
+
+                h1 {
+                    font-weight: 800;
+                    color: variables.$colorDarkBlue;
+                    font-size: 4em;
+                }
+            }
+
+            &-paragraph {
+
+                p {
+                    color: variables.$colorDarkGray;
+                    line-height: 2em;
+                }
+
+                button {
+                    background-color: variables.$colorRed;
+                    color: variables.$colorWhite;
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    letter-spacing: 0.3em;
+                    padding: 0.7em 2em;
+                    font-size: small;
+                    width: fit-content;
+
+                    &:hover {
+                        background-color: variables.$colorDarkBlue;
+                    }
+                }
+            }
+        }
+    }
+
+    &-2 {
+        background-color: variables.$colorDarkBlue;
+        color: variables.$colorGray;
+        padding: 2em 2em 0 2em;
+
+        h2 {
+            color: variables.$colorOrange;
+            font-weight: 700;
+            margin-bottom: 1em;
+            font-size: 3em;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.5em;
+            padding-bottom: 0.5em;
+            padding-top: 0.5em;
+
+            a {
+                text-decoration: none;
+                color: variables.$colorWhite;
+
+                &:hover {
+                    color: variables.$colorOrange;
+                }
+            }
+        }
+
+        .row {
+            padding-bottom: 2em;
+        }
+
+        .line-1,
+        .line-2 {
+            border-bottom: 1px solid variables.$colorDarkGray;
+        }
+
+        .line-2,
+        .line-3 {
+            padding-top: 1em;
+        }
+
+    }
+}
+
+.section-main-footer {
+    height: 50%;
+
+    .row {
+        .col {
+
+            img {
+                width: 7em;
+                margin-right: 1em;
+            }
+
+            h4 {
+                color: variables.$colorGray;
+                font-weight: 700;
+                font-size: 2em;
+            }
+
+            h5 {
+                a {
+                    color: variables.$colorDarkBlue;
+                    font-weight: 800;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: variables.$colorRed;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .container {
+        .attribution {
+            div {
+                color: variables.$colorDarkBlue;
+            }
+
+            a {
+                text-decoration: none;
+                color: variables.$colorDarkBlue;
+
+                &:hover {
+                    color: variables.$colorRed;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    #cabecalho {
+        .navbar {
+            .container {
+                button {
+                    border: none;
+                }
+
+                .offcanvas {
+                    transition: none;
+                }
+
+                .offcanvas.offcanvas-end.show {
+                    width: 15em;
+                }
+
+                .offcanvas-header {
+                    justify-content: end;
+
+                    .btn-close {
+                        --bs-btn-close-bg: none;
+                        width: 2em;
+                        padding: 1em;
+
+                        img {
+                            width: 100%;
+                            margin: auto;
+                        }
+                    }
+                }
+
+                .offcanvas-body {
+                    margin-top: 2em;
+
+                    .nav-link {
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    #section-main {
+        &-1 {
+            h1 {
+                font-size: 3em;
+            }
+        }
+
+        &-2 {
+            margin-top: 4em;
+            margin-bottom: 2em;
+        }
+    }
+
+    .section-main-footer {
+        .row {
+            display: block;
+
+            .col {
+                margin-bottom: 2em;
+            }
+        }
+    }
+}

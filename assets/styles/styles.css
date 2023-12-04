@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+header .nav-item {
+  list-style: none;
+}
+header .nav-link:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+#section-main {
+  margin-bottom: 3em;
+}
+#section-main-1 picture img {
+  width: 100%;
+}
+#section-main-1-texts {
+  margin-top: 2em;
+}
+#section-main-1-texts-title {
+  margin-right: 1em;
+}
+#section-main-1-texts-title h1 {
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  font-size: 4em;
+}
+#section-main-1-texts-paragraph p {
+  color: hsl(236, 13%, 42%);
+  line-height: 2em;
+}
+#section-main-1-texts-paragraph button {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding: 0.7em 2em;
+  font-size: small;
+  width: fit-content;
+}
+#section-main-1-texts-paragraph button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+#section-main-2 {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(233, 8%, 79%);
+  padding: 2em 2em 0 2em;
+}
+#section-main-2 h2 {
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+#section-main-2 h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+#section-main-2 h3 a {
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+}
+#section-main-2 h3 a:hover {
+  color: hsl(35, 77%, 62%);
+}
+#section-main-2 .row {
+  padding-bottom: 2em;
+}
+#section-main-2 .line-1,
+#section-main-2 .line-2 {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+#section-main-2 .line-2,
+#section-main-2 .line-3 {
+  padding-top: 1em;
+}
+
+.section-main-footer {
+  height: 50%;
+}
+.section-main-footer .row .col img {
+  width: 7em;
+  margin-right: 1em;
+}
+.section-main-footer .row .col h4 {
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+  font-size: 2em;
+}
+.section-main-footer .row .col h5 a {
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+  text-decoration: none;
+}
+.section-main-footer .row .col h5 a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+footer .container .attribution div {
+  color: hsl(240, 100%, 5%);
+}
+footer .container .attribution a {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+footer .container .attribution a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+@media screen and (max-width: 1023px) {
+  #cabecalho .navbar .container button {
+    border: none;
+  }
+  #cabecalho .navbar .container .offcanvas {
+    transition: none;
+  }
+  #cabecalho .navbar .container .offcanvas.offcanvas-end.show {
+    width: 15em;
+  }
+  #cabecalho .navbar .container .offcanvas-header {
+    justify-content: end;
+  }
+  #cabecalho .navbar .container .offcanvas-header .btn-close {
+    --bs-btn-close-bg: none;
+    width: 2em;
+    padding: 1em;
+  }
+  #cabecalho .navbar .container .offcanvas-header .btn-close img {
+    width: 100%;
+    margin: auto;
+  }
+  #cabecalho .navbar .container .offcanvas-body {
+    margin-top: 2em;
+  }
+  #cabecalho .navbar .container .offcanvas-body .nav-link {
+    margin-top: 2em;
+  }
+  #section-main-1 h1 {
+    font-size: 3em;
+  }
+  #section-main-2 {
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+  .section-main-footer .row {
+    display: block;
+  }
+  .section-main-footer .row .col {
+    margin-bottom: 2em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

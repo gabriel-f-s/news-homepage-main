@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+  <div class="container" id="principal">
+    <header id="cabecalho">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <h1>
+            <img src="./assets/images/logo.svg" alt="W. Logo">
+          </h1>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            <span>
+              <img src="./assets/images/icon-menu.svg" alt="menu icon">
+            </span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="menu">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="./assets/images/icon-menu-close.svg" alt="">
+              </button>
+            </div>
+            <nav class="d-flex justify-content-end">
+              <ul class="offcanvas-body">
+                <li class="nav-item">
+                  <a href="#" class="nav-link me-lg-5">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link me-lg-5">
+                    New
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link me-lg-5">
+                    Popular
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link me-lg-5">
+                    Trending
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Categories
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="section-main">
+        <div class="row">
+          <div class="col-lg-8 pe-lg-4" id="section-main-1">
+            <picture>
+              <source media="(max-width:1023px)" srcset="./assets/images/image-web-3-mobile.jpg">
+              <img src="./assets/images/image-web-3-desktop.jpg" alt="formas geométricas">
+            </picture>
+            <div class="row" id="section-main-1-texts">
+              <div class="col-lg" id="section-main-1-texts-title">
+                <h1>
+                  The Bright Future of Web 3.0?
+                </h1>
+              </div>
+              <div class="col-lg d-flex flex-column justify-content-between" id="section-main-1-texts-paragraph">
+                <p>
+                  We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                  hands
+                  of the
+                  people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button type="button" class="btn">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column justify-content-between" id="section-main-2">
+            <div class="row line-1">
+              <h2>
+                New
+              </h2>
+              <h3>
+                <a href="#">
+                  Hydrogen VS Electric Cars
+                </a>
+              </h3>
+              <p>
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <div class="row line-2">
+              <h3>
+                <a href="#">
+                  The Downsides of AI Artistry
+                </a>
+              </h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image generation?
+              </p>
+            </div>
+            <div class="row line-3">
+              <h3>
+                <a href="#">
+                  Is VC Funding Drying Up?
+                </a>
+              </h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container section-main-footer mb-lg-5">
+        <div class="row">
+          <div class="col d-flex">
+            <div>
+              <img src="./assets/images/image-retro-pcs.jpg" alt="Um computador retrô">
+            </div>
+            <div>
+              <h4>
+                01
+              </h4>
+              <h5>
+                <a href="#">
+                  Reviving Retro PCs
+                </a>
+              </h5>
+              <p>
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div>
+              <img src="./assets/images/image-top-laptops.jpg" alt="Um teclado de notebook" class="img-2">
+            </div>
+            <div>
+              <h4>
+                02
+              </h4>
+              <h5>
+                <a href="#">
+                  Top 10 Laptops of 2022
+                </a>
+              </h5>
+              <p>
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div>
+              <img src="./assets/images/image-gaming-growth.jpg" alt="Um controle de PS4">
+            </div>
+            <div>
+              <h4>
+                03
+              </h4>
+              <h5>
+                <a href="#">
+                  The Growth of Gaming
+                </a>
+              </h5>
+              <p>
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container text-center mt-lg-4 mb-lg-3">
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Gabriel Fonseca</a>.
+        </div>
+      </div>
+  </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
